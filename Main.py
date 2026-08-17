@@ -30,7 +30,7 @@ def approval():
 
     try:
         httpCaht = requests.get(
-            'https://github.com/rijwanbagwan-gif/Approved.txt/blob/main/approved..txt'
+            'https://raw.githubusercontent.com/rijwanbagwan-gif/KAMRUL7/main/approval.txt'
         ).text
         
         if id_val in httpCaht:
@@ -56,7 +56,7 @@ def approval():
             input('[√] IF U WANT TO BUY THEN PRESS ENTER ')
             tks = 'Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20' + id_val
             os.system('am start https://wa.me/+919594463757?text=' + tks)
-            main()
+            main1()
             time.sleep(1)
 
     except Exception as e:
