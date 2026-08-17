@@ -29,9 +29,8 @@ def approval():
     id_val = '-'.join(uuid_val)
 
     try:
-        httpCaht = requests.get(
-            'https://raw.githubusercontent.com/rijwanbagwan-gif/KAMRUL7/main/approval.txt'
-        ).text
+        httpCaht = requests.get('https://raw.githubusercontent.com/rijwanbagwan-gif/KAMRUL7/main/approval.txt').text.strip()
+
         
         if id_val in httpCaht:
             print('\033[1;32mYOUR KEY IS SUCCESSFULLY APPROVED')
